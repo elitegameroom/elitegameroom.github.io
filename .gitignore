@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist  <-- Uncomment this line when you want to commit the dist folder for GitHub Pages
 dist-ssr
 *.local
 
