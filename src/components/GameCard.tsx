@@ -24,7 +24,7 @@ const GameCard = ({ game, linkType }: GameCardProps) => {
         />
       </div>
       <div className="p-3 text-center">
-        <span className="text-sm font-semibold text-foreground gold-text-glow">
+        <span className="text-sm font-semibold text-accent gold-text-glow">
           {game.name}
         </span>
       </div>
