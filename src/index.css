@@ -67,12 +67,12 @@
 
 @layer utilities {
   .gold-glow {
-    box-shadow: var(--gold-glow);
+    box-shadow: var(--purple-glow);
   }
   .gold-border-glow {
-    box-shadow: var(--gold-border-glow);
+    box-shadow: var(--purple-border-glow);
   }
   .gold-text-glow {
-    text-shadow: 0 0 12px hsl(45 100% 50% / 0.5);
+    text-shadow: 0 0 12px hsl(280 100% 60% / 0.5);
   }
 }
