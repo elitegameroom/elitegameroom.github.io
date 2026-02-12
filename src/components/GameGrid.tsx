@@ -7,7 +7,7 @@ const GameGrid = () => {
 
   return (
     <section className="w-full max-w-6xl mx-auto px-4 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 gold-text-glow text-foreground">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 gold-text-glow text-accent">
         Game Links
       </h2>
 

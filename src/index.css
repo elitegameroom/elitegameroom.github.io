@@ -6,47 +6,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 7%;
-    --foreground: 45 100% 50%;
+    --background: 270 50% 5%;
+    --foreground: 45 100% 55%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 45 100% 50%;
+    --card: 270 40% 10%;
+    --card-foreground: 45 100% 55%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 45 100% 50%;
+    --popover: 270 40% 10%;
+    --popover-foreground: 45 100% 55%;
 
-    --primary: 45 100% 50%;
-    --primary-foreground: 0 0% 5%;
+    --primary: 270 80% 55%;
+    --primary-foreground: 45 100% 90%;
 
-    --secondary: 0 0% 14%;
-    --secondary-foreground: 45 100% 50%;
+    --secondary: 270 30% 15%;
+    --secondary-foreground: 45 100% 55%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 40 20% 55%;
+    --muted: 270 20% 18%;
+    --muted-foreground: 270 15% 50%;
 
-    --accent: 45 100% 50%;
-    --accent-foreground: 0 0% 5%;
+    --accent: 45 100% 55%;
+    --accent-foreground: 270 50% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 45 60% 20%;
-    --input: 45 60% 20%;
-    --ring: 45 100% 50%;
+    --border: 270 40% 22%;
+    --input: 270 40% 22%;
+    --ring: 270 80% 55%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 45 100% 50%;
-    --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 0 0% 5%;
-    --sidebar-accent: 0 0% 14%;
-    --sidebar-accent-foreground: 45 100% 50%;
-    --sidebar-border: 45 60% 20%;
-    --sidebar-ring: 45 100% 50%;
-
-    --gold-glow: 0 0 20px hsl(45 100% 50% / 0.3);
-    --gold-border-glow: 0 0 8px hsl(45 100% 50% / 0.4);
+    --sidebar-background: 270 50% 6%;
+    --sidebar-foreground: 45 100% 55%;
+    --sidebar-primary: 270 80% 55%;
+    --sidebar-primary-foreground: 45 100% 90%;
+    --sidebar-accent: 270 30% 15%;
+    --sidebar-accent-foreground: 45 100% 55%;
+    --sidebar-border: 270 40% 22%;
+    --sidebar-ring: 270 80% 55%;
   }
 }
 
@@ -58,6 +55,7 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -66,13 +64,19 @@
 }
 
 @layer utilities {
+  .purple-glow {
+    box-shadow: 0 0 20px hsl(270 80% 55% / 0.4);
+  }
   .gold-glow {
-    box-shadow: var(--purple-glow);
+    box-shadow: 0 0 20px hsl(45 100% 55% / 0.3);
   }
   .gold-border-glow {
-    box-shadow: var(--purple-border-glow);
+    box-shadow: 0 0 10px hsl(270 80% 55% / 0.5), 0 0 20px hsl(45 100% 55% / 0.2);
   }
   .gold-text-glow {
-    text-shadow: 0 0 12px hsl(280 100% 60% / 0.5);
+    text-shadow: 0 0 12px hsl(45 100% 55% / 0.6), 0 0 30px hsl(270 80% 55% / 0.3);
+  }
+  .purple-text-glow {
+    text-shadow: 0 0 12px hsl(270 80% 55% / 0.6), 0 0 30px hsl(270 80% 55% / 0.3);
   }
 }
