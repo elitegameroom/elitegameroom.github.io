@@ -6,7 +6,7 @@ const Index = () => {
       {/* Header */}
       <header className="w-full border-b border-border px-6 py-4 flex items-center justify-between">
         <h1 className="text-xl md:text-2xl font-bold text-foreground gold-text-glow tracking-wider">
-          Check My Sweep
+          Elite Games
         </h1>
       </header>
 
