@@ -9,7 +9,7 @@ const Index = () => {
       {/* Header */}
       <header className="relative z-10 w-full border-b border-border px-6 py-4 flex items-center justify-between bg-background/80 backdrop-blur-sm">
         <h1 className="text-xl md:text-2xl font-bold text-foreground gold-text-glow tracking-wider">
-          Elite Games
+          Elite Gameroom
         </h1>
       </header>
 
